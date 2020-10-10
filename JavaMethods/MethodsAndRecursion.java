@@ -35,8 +35,10 @@ public class MethodsAndRecursion
         
         System.out.println("This part of the program will print an isosceles triangle of a height as entered by the user and uses recursion.");
         System.out.println("Please enter a height for the triangle: ");
+        firstNumber = input.nextInt();
         
-        printIsoscelesTriangle(firstNumber);
+        printIsoscelesTriangleOne(firstNumber);
+        printIsoscelesTriangleTwo(firstNumber);
         
     }
     
@@ -65,10 +67,47 @@ public class MethodsAndRecursion
         }
     }
     
-    public static void printIsoscelesTriangle(int a)
+    public static void printIsoscelesTriangleOne(int a)
     {
         
+        if (a > 1) 
+        {
+            
+            printIsoscelesTriangleOne(a - 1);
+            
+        }
         
+        for (int i = 0; i < a; i++)
+        {
+                
+            System.out.print("*");
+                
+        }
+        
+        System.out.println();
+         
+    }
+    
+    public static void printIsoscelesTriangleTwo(int a)
+    {
+        
+        a = a - 1;
+        
+        for (int i = 0; i < a; i++)
+        {
+                
+            System.out.print("*");
+                
+        }
+        
+        System.out.println();
+       
+        if (a > 1) 
+        {
+            
+            printIsoscelesTriangleTwo(a);
+            
+        }
         
     }
 }
