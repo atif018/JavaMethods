@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MethodsAndRecursion
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=a\ b
+comment2.target=int\ multiplyTwoNumbers(int,\ int)
+comment3.params=a\ b
+comment3.target=void\ printBox(int,\ int)
+comment4.params=a
+comment4.target=void\ printIsoscelesTriangle(int)
+numComments=5
